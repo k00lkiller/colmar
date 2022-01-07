@@ -24,7 +24,7 @@ ul.footer-menu li {
 }
 
 section {
-  background-color: grey;
+  background-color: lightgrey;
   color: black;
   margin: 2rem 0;
 }
@@ -35,4 +35,19 @@ section {
 }
 .column {
   flex: 1 0 auto;
+}
+
+ul.category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.category li {
+  display: inline;
+}
+ul.category li:after {
+  content: ",";
+}
+ul.category li:last-child:after {
+  content: "";
 }
