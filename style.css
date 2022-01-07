@@ -33,5 +33,6 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-.banner {
+.column {
+  flex: 1 0 auto;
 }
