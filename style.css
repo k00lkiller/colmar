@@ -2,14 +2,21 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/*--Header & Footer--*/
 nav,
 footer {
   display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .branding {
   display: flex;
+  align-content: center;
+  margin: 0 1.5rem;
 }
 
 ul.menu,
@@ -26,7 +33,7 @@ ul.footer-menu li {
 section {
   background-color: lightgrey;
   color: black;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 #hero {
