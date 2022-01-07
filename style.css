@@ -24,7 +24,14 @@ ul.footer-menu li {
 }
 
 section {
-  background-color: black;
-  color: white;
+  background-color: grey;
+  color: black;
   margin: 2rem 0;
+}
+
+#hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner {
 }
