@@ -12,6 +12,7 @@ footer {
   align-content: center;
   justify-content: space-between;
   background: white;
+  width: 100%;
 }
 nav {
   position: fixed;
@@ -50,17 +51,71 @@ ul.footer-menu li a {
 }
 
 section {
-  background-color: lightgrey;
-  color: black;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #242424;
+  max-width: 100%;
+  padding: 0 1rem;
 }
 
-#hero {
-  display: flex;
-  flex-wrap: wrap;
-}
 .column {
+  width: 100%;
   flex: 1 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin: 2rem 0;
+  font-size: 2.5em;
+}
+
+.title.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  cursor: pointer;
+}
+
+.hide-mobile {
+  display: none;
+}
+.info-meta {
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+.course {
+  display: block;
+  width: 100%;
+}
+.course h3 {
+  margin: 0;
+}
+.course h3 a {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: lightgrey;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 ul.category {
@@ -76,4 +131,10 @@ ul.category li:after {
 }
 ul.category li:last-child:after {
   content: "";
+}
+
+@media screen and (min-width: 470px) {
+  .hide-mobile {
+    display: block;
+  }
 }
